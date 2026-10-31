@@ -45,3 +45,18 @@ html[data-font-size="130"] .mobile-lang,html[data-font-size="140"] .mobile-lang{
 html[data-font-size="130"] .single .mobile-lang,html[data-font-size="140"] .single .mobile-lang{display:none}
 @media(max-width:759px){.topbar-actions{gap:8px}.language-switch button{font-size:14px}.topbar-context{flex-shrink:0}}
 @media print{html{--text-scale:1!important}}
+
+/* Desktop directory splitter sits outside the sidebar's scroll area. */
+.sidebar-resizer{display:none}
+@media screen and (min-width:760px){
+  .sidebar{width:var(--sidebar-width,280px)}
+  .main{margin-left:var(--sidebar-width,280px)}
+  .sidebar-resizer{display:block;position:fixed;top:0;bottom:0;left:var(--sidebar-width,280px);width:10px;z-index:25;cursor:col-resize;touch-action:none;outline-offset:-2px}
+  .sidebar-resizer:before{content:'';position:absolute;left:2px;top:0;bottom:0;width:2px;background:#c7d3e5}
+  .sidebar-resizer:after{content:'';position:absolute;top:50%;left:0;width:6px;height:40px;border-radius:5px;background:#8298b8}
+  .sidebar-resizer:focus-visible:before,.resizing-sidebar .sidebar-resizer:before{width:4px;background:var(--blue)}
+  .sidebar-resizer:focus-visible{outline:2px solid var(--blue)}
+  .resizing-sidebar,.resizing-sidebar *{cursor:col-resize!important;user-select:none!important}
+  .reader{container-type:inline-size}
+}
+@container (max-width:580px){.language-headings{display:none}.paragraph-row{grid-template-columns:1fr}.text-cell,.text-cell:first-child,.text-cell:last-child{border:0;padding:0 0 24px}.paragraph-row:last-child .text-cell:not(:last-child){padding-bottom:24px}.mobile-lang{display:block}.single .mobile-lang{display:none}}
