@@ -36,31 +36,38 @@ def env_key():
   for line in p.read_text().splitlines():
    if line.strip().startswith('OPENAI_API_KEY='):return line.strip().split('=',1)[1].strip().strip('\"\'')
  raise RuntimeError('OPENAI_API_KEY is not configured. No alternative model will be used.')
-def finalize(c,baseline,objects,lookup,info,label,prefix):
- stage=ROOT/'data/staging'
+def finalize(c,baseline,objects,lookup,info,label,prefix,target='zh'):
+ stage=ROOT/'data/staging';other='en' if target=='zh' else 'zh'
  for obj in objects:
-  fr=obj['fr'] if isinstance(obj['fr'],list) else [obj['fr']];zh=lookup(fr);obj['zh']=zh if isinstance(obj['fr'],list) else zh[0]
- assert [(o['fr'],o.get('en')) for o in multilingual(c)]==[(o['fr'],o.get('en')) for o in multilingual(baseline)]
- def numbers(text,zh_target=False):
-  text=re.sub(r'(?<=\d)[\s\u00a0.](?=\d{3}(?:\D|$))' if zh_target else r'(?<=\d)[\s\u00a0,，.](?=\d{3}(?:\D|$))','',text)
+  fr=obj['fr'] if isinstance(obj['fr'],list) else [obj['fr']];out=lookup(fr);obj[target]=out if isinstance(obj['fr'],list) else out[0]
+ assert [(o['fr'],o.get(other)) for o in multilingual(c)]==[(o['fr'],o.get(other)) for o in multilingual(baseline)]
+ def numbers(text,zh_target=False,comma=False):
+  # French writes article lists as 221-1,221-18; only English uses commas as thousands separators.
+  text=re.sub(r'(?<=\d)[\s\u00a0,.](?=\d{3}(?:\D|$))' if comma else r'(?<=\d)[\s\u00a0.](?=\d{3}(?:\D|$))','',text)
   if zh_target:
    # Section/class ordinals and months are rendered as Chinese numerals (第一节, 第五级, 3月).
    text=re.sub(r'\b(?:sections?|sous-sections?|paragraphes?)\s+(?:\d+(?:er|re|e)?(?:\s+(?:bis|ter|quater|quinquies))?(?:\s*(?:,|à|et)\s*)?)+',' ',text)
    text=re.sub(r'\b\d+(?:re|e) classe',' ',text)
    text=re.sub(r'\d{1,2}月','月',text)
   return collections.Counter(re.findall(r'\d+',text))
- warnings=[]
+ names={'zh':'Chinese','en':'English'};warnings=[]
+ def describe(prov,l):return f"{names[l]}: {prov[l]['label']}, directly from French" if l in prov else f'{names[l]}: Argos machine draft via English pivot' if l=='zh' else f'{names[l]}: Argos machine draft'
  for a in c['articles']:
-  a['translationStatus']='ai-unreviewed';a['translationProvider']=f'Chinese: {label}, directly from French; English: unchanged'
-  a['translationProvenance']={'zh':{k:info[k] for k in ['sourceLanguage','targetLanguage','pivotLanguage','model','version']}}
+  prov=a.get('translationProvenance',{})
+  for v in prov.values():v.setdefault('label',{'claude-opus-5-5':'Claude Opus 5.5','gpt-6-astra':'GPT-6 Astra'}.get(v.get('model'),v.get('model')))
+  prov[target]={**{k:info[k] for k in ['sourceLanguage','targetLanguage','pivotLanguage','model','version']},'label':label};a['translationProvenance']=prov
+  a['translationStatus']='ai-unreviewed';a['translationProvider']='; '.join(describe(prov,l) for l in ['zh','en'])
   a.pop('translationWarnings',None)
   fr=' '.join(a['text']['fr'])
-  targets=[l for l in ['en','zh'] if numbers(' '.join(a['text'][l]),l=='zh')!=numbers(fr,l=='zh')]
+  targets=[l for l in ['en','zh'] if numbers(' '.join(a['text'][l]),l=='zh',l=='en')!=numbers(fr,l=='zh')]
   if targets:a['translationWarnings']=[{'type':'numeric-review','languages':targets}];warnings.append({'article':a['id'],'languages':targets})
- c['metadata']['translation']={'engine':f'{label} (Chinese); existing English unchanged','method':'French directly to Simplified Chinese; no English pivot','review':'AI reference translations without professional legal review','chinese':{**info,'translatedArticles':len(c['articles'])},'english':{'changed':False},'numericReviewArticles':len(warnings)}
- report=json.loads((ROOT/'public/data/coverage.json').read_text());report.update(translation=c['metadata']['translation'],numericReview=warnings,corpusSha256=sha(c))
- (stage/f'{prefix}-zh-ready.json').write_text(json.dumps(c,ensure_ascii=False,indent=2)+'\n');(stage/f'{prefix}-zh-coverage.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
- print(f'{label} staging corpus complete. Review before importing or deploying.',flush=True)
+ meta=c['metadata'].get('translation',{});prov=c['articles'][0]['translationProvenance'];both=all(l in prov for l in ['zh','en'])
+ meta[{'zh':'chinese','en':'english'}[target]]={**info,'label':label,'translatedArticles':len(c['articles'])}
+ meta.update(engine=' / '.join(describe(prov,l) for l in ['zh','en']),method='French directly to Simplified Chinese and English; no pivot language' if both else meta.get('method'),review='AI reference translations without professional legal review',numericReviewArticles=len(warnings))
+ c['metadata']['translation']=meta
+ report=json.loads((ROOT/'public/data/coverage.json').read_text());report.update(translation=meta,numericReview=warnings,corpusSha256=sha(c))
+ (stage/f'{prefix}-{target}-ready.json').write_text(json.dumps(c,ensure_ascii=False,indent=2)+'\n');(stage/f'{prefix}-{target}-coverage.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+ print(f'{label} staging corpus ({target}) complete. Review before importing or deploying.',flush=True)
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--prepare',action='store_true');parser.add_argument('--max-requests',type=int,default=1)
  args=parser.parse_args();stage=ROOT/'data/staging';stage.mkdir(exist_ok=True)

@@ -2,11 +2,11 @@
 
 已收录 **1,301 条现行法条**，涵盖立法部分与法规部分，按 15 卷、103 个章节分组组织。语料版本日期 **2026-10-20**；已与 Légifrance 于 **2026-10-29** 生成的官方整本 PDF 全量核对。全部条文编号及法文正文一致（忽略排版差异），不含已废止历史版本。官方资料标注最近更新于 **2026-08-26**。
 
-**中英文本为未经法律专业审校的参考译文。** 中文译文已全部由 AI（Claude）直接从法语重译，不经英语中转；英语仍为本地 Argos 机器初稿，含个别 AI 修订，未重译。自动数字检查发现疑点的条文会额外提示核对金额、期限及法条引用；该检查不能证明翻译正确。
+**中英文本为未经法律专业审校的参考译文。** 中文和英语译文均已由 AI（Claude）直接从法语重译，不经任何中转语言。自动数字检查发现疑点的条文会额外提示核对金额、期限及法条引用；该检查不能证明翻译正确。
 
-**Français.** Corpus intégral de 1 301 articles, parties législative et réglementaire, version du 20 octobre 2026. Les identifiants et textes français ont été comparés au PDF officiel de Légifrance généré le 29 octobre 2026. Les traductions anglaise et chinoise sont des brouillons non officiels et non révisés juridiquement ; le chinois est traduit directement du français. Les versions abrogées ne sont pas incluses.
+**Français.** Corpus intégral de 1 301 articles, parties législative et réglementaire, version du 20 octobre 2026. Les identifiants et textes français ont été comparés au PDF officiel de Légifrance généré le 29 octobre 2026. Les traductions anglaise et chinoise sont des brouillons non officiels et non révisés juridiquement ; le chinois et l’anglais sont traduits directement du français. Les versions abrogées ne sont pas incluses.
 
-**English.** Complete corpus of 1,301 articles, legislative and regulatory parts, as of 20 October 2026. Identifiers and French texts were compared with the official Légifrance PDF generated on 29 October 2026. English and Chinese are unofficial drafts without legal review; Chinese is translated directly from French, with no English pivot. Repealed historical versions are excluded.
+**English.** Complete corpus of 1,301 articles, legislative and regulatory parts, as of 20 October 2026. Identifiers and French texts were compared with the official Légifrance PDF generated on 29 October 2026. English and Chinese are unofficial drafts without legal review; both are translated directly from French, with no pivot language. Repealed historical versions are excluded.
 
 ## 使用 / Usage
 
@@ -54,9 +54,9 @@ npm run deploy
 
 本次比对发现 droit.org 中 R131-2 对道路法典的引用误为 `R. 1231`，已依据官方 PDF 修正为 `R. 123`，修改记录保留在语料元数据中。
 
-## 法语直接译中文
+## 法语直接译中文和英语
 
-公开语料中的全部中文（1,301 条正文、标题及目录）已由 Claude 直接从法语重译，不经英语中转；英语译文保持原样。条文标记为 `ai-unreviewed`，`translationProvenance.zh` 记录来源语言、模型和版本。译文遵循固定术语表（crime=重罪、délit=轻罪、contravention=违警罪等）及以下示例：
+公开语料中的全部中文和英语（1,301 条正文、标题及目录）已由 Claude 直接从法语重译，不经中转语言。条文标记为 `ai-unreviewed`，`translationProvenance.zh` 和 `translationProvenance.en` 分别记录来源语言、模型和版本。译文遵循固定术语表（中文：crime=重罪、délit=轻罪、contravention=违警罪；英语：crime=felony、délit=misdemeanour、contravention=petty offence 等）及以下示例：
 
 > 法语：1° 38 euros au plus pour les contraventions de la 1re classe ;
 >
@@ -65,15 +65,15 @@ npm run deploy
 流程（Python 3.12+ 标准库，不调用外部 API）：
 
 ```sh
-# 导出待译分块到 data/staging/claude-zh/in/，目录标签另列 labels-fr.json
-python3 scripts/translate-claude-zh.py --export
-# 由目录标题词表生成编号一致的标签译文（第一卷、第一编、第一章之一……）
-python3 scripts/claude-zh-labels.py
-# 导入 out/ 中的译文并校验段落对齐；全部完成后生成 claude-zh-ready.json 和 claude-zh-coverage.json
-python3 scripts/translate-claude-zh.py --import
+# 导出待译分块到 data/staging/claude-<lang>/in/（lang 为 zh 或 en），目录标签另列 labels-fr.json
+python3 scripts/translate-claude-direct.py --lang zh --export
+# 由目录标题词表生成编号一致的标签译文（第一卷、第一章之一……／Book I, Chapter I bis…）
+python3 scripts/claude-direct-labels.py zh
+# 导入 out/ 中的译文并校验段落对齐；全部完成后生成 claude-<lang>-ready.json 和 claude-<lang>-coverage.json
+python3 scripts/translate-claude-direct.py --lang zh --import
 ```
 
-译文缓存在 `data/staging/direct-fr-zh-claude.sqlite3`。生成的语料和覆盖报告经人工核对后复制到 `public/data/`。数字检查对中文忽略节、目、违警罪等级等改用中文数字的序号；当前无中文条文被标记，仅英语仍有数字提示。自动检查不能替代法律专业审校。
+英语流程把 `zh` 换成 `en` 即可。译文缓存在 `data/staging/direct-fr-<lang>-claude.sqlite3`。生成的语料和覆盖报告经人工核对后复制到 `public/data/`。数字检查对中文忽略节、目、违警罪等级等改用中文数字的序号；法文条文列表中的逗号（如 221-1,221-18）不视为千位分隔符。当前无中文条文被标记；英语仅 3 条因法文以文字书写违警罪等级（quatrième classe）而被提示。自动检查不能替代法律专业审校。
 
 `scripts/translate-direct-zh.py` 保留 GPT-6 Astra 的备选流程（需 `OPENAI_API_KEY`，会产生费用），并提供两条流程共用的 `finalize` 校验。不要用旧的 `finalize-full-corpus.py` 处理新译文，该脚本仅用于历史导入。
 
@@ -94,7 +94,6 @@ npm run import -- /absolute/path/to/corpus.json
 - [Légifrance 官方《Code pénal》](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070719/)
 - [Légifrance 官方整本 PDF](https://www.legifrance.gouv.fr/download/file/pdf/LEGITEXT000006070719.pdf/LEGI)
 - [droit.org 结构化 LEGI 镜像](https://codes.droit.org/HTML/Code%20p%C3%A9nal.html)
-- [Argos Translate](https://github.com/argosopentech/argos-translate)
 
 ## 测试
 
