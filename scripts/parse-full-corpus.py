@@ -45,7 +45,7 @@ for el in body:
         group={'id':f'g{len(groups)+1:03}','book':book['id'],'title':{'fr':re.sub(r'^[^:]+ : ','',group_path[-1])},'range':'','path':{'fr':list(group_path)},'articleIds':[]}
         groups.append(group);group_map[group_path]=group
     group=group_map[group_path];group['articleIds'].append(aid)
-    articles.append({'id':aid,'group':group['id'],'title':{'fr':re.sub(r'^[^:]+ : ','',path[-1])},'text':{'fr':paras},'effectiveFrom':None,'snapshotDate':snapshot,'checkedAt':'2026-10-31','source':source_url,'translationStatus':'machine-unreviewed','translationProvider':'Argos Translate 1.9 (fr→en→zh); CTranslate2 4.8.4','related':[],'path':{'fr':path},'sourceId':re.search(r'LEGIARTI\d+',source_url)[0]})
+    articles.append({'id':aid,'group':group['id'],'title':{'fr':re.sub(r'^[^:]+ : ','',path[-1])},'text':{'fr':paras},'effectiveFrom':None,'snapshotDate':snapshot,'checkedAt':'2026-10-31','source':source_url,'translationStatus':'machine-unreviewed','translationProvider':'French source only; translation pending','related':[],'path':{'fr':path},'sourceId':re.search(r'LEGIARTI\d+',source_url)[0]})
 for g in groups:
     ids=g.pop('articleIds');g['range']=ids[0] if len(ids)==1 else ids[0]+' – '+ids[-1]
 ids={a['id'] for a in articles}

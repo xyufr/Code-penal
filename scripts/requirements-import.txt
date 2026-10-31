@@ -1,3 +1,5 @@
 # Offline corpus translation only; not required to run or deploy the website.
 ctranslate2==4.8.4
 sentencepiece==0.2.2
+
+# GPT-6 direct translation uses Python 3.12+ standard library only.
