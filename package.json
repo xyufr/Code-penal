@@ -1,0 +1,20 @@
+{
+  "name": "code-penal-trilingue",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "preview": "wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:check": "npm run build && wrangler deploy --dry-run",
+    "import": "node scripts/import.mjs",
+    "corpus:parse": "python3 scripts/parse-full-corpus.py",
+    "corpus:verify": "python3 scripts/verify-official-corpus.py"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

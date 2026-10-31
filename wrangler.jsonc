@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "code-penal-trilingue",
+  "account_id": "d0749bca93d9081eb504534883029c6c",
+  "routes": [{ "pattern": "law.xyufr.com", "custom_domain": true }],
+  "compatibility_date": "2026-10-31",
+  "assets": { "directory": "./dist" },
+  "observability": {
+    "enabled": true,
+    "traces": { "enabled": true }
+  }
+}
