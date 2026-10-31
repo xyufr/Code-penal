@@ -11,380 +11,129 @@
   "textDifferences": [],
   "extractionMissingLineNumbers": [],
   "translation": {
-    "engine": "Argos Translate 1.9 / CTranslate2 4.8.4",
-    "method": "French to English; English to Simplified Chinese",
-    "review": "Unreviewed machine drafts; initial translations retained when source matches",
-    "retainedInitialArticles": 20,
-    "cacheVersion": "argos-1.9-ct2-int8-beam4-v1",
-    "numericReviewArticles": 733,
-    "explicitCorrections": 42,
-    "numericCheckNote": "Conservative digit-token comparison; may flag formatting or spelled-out numbers. Not a legal translation review."
+    "engine": "Claude Opus 5.5 (Chinese); existing English unchanged",
+    "method": "French directly to Simplified Chinese; no English pivot",
+    "review": "AI reference translations without professional legal review",
+    "chinese": {
+      "model": "claude-opus-5-5",
+      "version": "claude-opus-5-5-direct-fr-zh-v1-52b8a8aadee4",
+      "sourceLanguage": "fr",
+      "targetLanguage": "zh-Hans",
+      "pivotLanguage": null,
+      "translatedArticles": 1301
+    },
+    "english": {
+      "changed": false
+    },
+    "numericReviewArticles": 245
   },
   "numericReview": [
     {
-      "article": "112-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "113-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "113-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "113-8",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "113-14",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "121-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "122-1-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "122-1-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "122-9",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
       "article": "131-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "131-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-3",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-4",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-4-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-5-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-6",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "131-8",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-13",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "131-14",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-15-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-16",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-17",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-21",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "131-21-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-22",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "131-26",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-26-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-26-2",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "131-27",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-30",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-30-2",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "131-32",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-35",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-35-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-36-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "131-36-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-36-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-36-12",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-37",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-39",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-41",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "131-43",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "131-44-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "131-48",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-5",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "132-6-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-8",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-9",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "132-12",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "132-13",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "132-16-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "132-18",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "132-19",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-23",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "132-25",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "132-26",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "132-31",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "132-34",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
@@ -394,298 +143,153 @@
       ]
     },
     {
-      "article": "132-40",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
       "article": "132-41",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-42",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-44",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-45",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "132-45-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "132-53",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "132-61",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "132-63",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-65",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-76",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-77",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-78-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "132-79",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "132-80",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "133-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "133-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "133-13",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "133-14",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "133-16",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "133-16-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "211-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "211-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "212-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "212-3",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "213-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "213-3",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "214-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "214-2",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "214-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "214-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "215-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "215-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "221-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "221-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "221-4",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "221-5",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "221-5-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "221-5-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "221-5-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "221-5-6",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "221-6-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "221-6-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "221-7",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "221-8",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
@@ -695,75 +299,39 @@
       ]
     },
     {
-      "article": "221-12",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
       "article": "221-14",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "221-18",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "221-19",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "221-20",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "221-21",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-4",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-5",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-6-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
@@ -775,620 +343,259 @@
     {
       "article": "222-7",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-8",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-9",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-10",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-11",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-12",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-13",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-14",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-14-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-14-5",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-15-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-16",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-16-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-16-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-16-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-17",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-18",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-18-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-18-3",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-18-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-19-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-20-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-21",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-22",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-22-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-23",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-23-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-23-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-24",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-25",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-26",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-26-2",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-27",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-28",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-29",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-29-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-29-2",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-29-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-30",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-30-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-30-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-31",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-32",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-33",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-33-2-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-33-2-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-33-2-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-33-3",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-35",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-36",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-37",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-37-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-38",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-39",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-40",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-43",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-44",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-44-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-44-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-47",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-48-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "222-48-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-48-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-52",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-53",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-54",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-55",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-57",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-58",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "222-59",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-61",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "222-62",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "223-1-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "223-1-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "223-3",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "223-4",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "223-5",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "223-6",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "223-8",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "223-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "223-13",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "223-15-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "223-15-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "223-15-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "223-15-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "223-15-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "223-17",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "223-18",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "224-1 A",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "224-1 B",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "224-1 C",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "224-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "224-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "224-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "224-4",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "224-5",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
@@ -1400,22 +607,19 @@
     {
       "article": "224-5-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "224-6",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "224-6-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
@@ -1427,52 +631,19 @@
     {
       "article": "224-9",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "225-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-4-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "225-4-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "225-4-3",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "225-4-6",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
@@ -1482,48 +653,21 @@
       ]
     },
     {
-      "article": "225-4-13",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
       "article": "225-7-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "225-8",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "225-10",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
@@ -1533,598 +677,153 @@
       ]
     },
     {
-      "article": "225-11-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-12-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
       "article": "225-12-2",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "225-12-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-12-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-12-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-12-9",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-12-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-13",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-14",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-14-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-14-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "225-15",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "225-16",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-16-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-17",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-19",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "225-20",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "225-22",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-23",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "225-24",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "225-26",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "226-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-3-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-8-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-14",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "226-16",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "226-16-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-16-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-17",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-17-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-18",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-18-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-19",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-19-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-20",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-22",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-22-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-22-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "226-23",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "226-27",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "226-29",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "227-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "227-2",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "227-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-4-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-4-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-8",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-9",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-12",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-15",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "227-16",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "227-17",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-17-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "227-18",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "227-18-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "227-18-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-19",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-21",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-22",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "227-22-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "227-22-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "227-23",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "227-23-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "227-24",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "227-24-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-25",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-26",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "227-27",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "227-27-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "227-27-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "227-28-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "227-29",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "227-31-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "227-33",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "311-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "311-4-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "311-4-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "311-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "311-6",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "311-7",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "311-8",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "311-9",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "311-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "311-11",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "311-14",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "311-16",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "312-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "312-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "312-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "312-4",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "312-5",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "312-6",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
@@ -2134,633 +833,183 @@
       ]
     },
     {
-      "article": "312-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "312-8",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "312-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "312-11",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "312-13",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "312-15",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "313-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
       "article": "313-2",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "313-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "313-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "313-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "314-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "314-1-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "314-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "314-5",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "314-10",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "314-11",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "314-13",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "315-1-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "321-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "321-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "321-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "321-6-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "321-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "321-8",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "321-9",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "322-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "322-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "322-3-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "322-3-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "322-4-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "322-4-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "322-5",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "322-6",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "322-6-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "322-7",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "322-8",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "322-9",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "322-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "322-11-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "322-13",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "322-15",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "322-15-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "322-17",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "323-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "323-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "323-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "323-3-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "323-4-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "323-4-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "323-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "323-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "324-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "324-1-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "324-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "324-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "411-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "411-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "411-4",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "411-5",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "411-6",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "411-8",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "411-9",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "411-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "411-11",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "411-12",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "412-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "412-2",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "412-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "412-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "412-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "412-7",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "412-8",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "413-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "413-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "413-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "413-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "413-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "413-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "413-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "413-11",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "413-12",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "413-13",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "413-14",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "414-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "414-4",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "414-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "414-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "421-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "421-2-3",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "421-2-4",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "421-2-4-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "421-2-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "421-2-5-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "421-2-6",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "421-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "421-4",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "421-5",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "421-6",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "421-7",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
@@ -2772,1173 +1021,265 @@
     {
       "article": "422-3",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "422-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-8-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-9",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-15",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-16",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-17",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-18",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "431-20",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "431-26",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "431-29",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "432-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "432-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "432-4",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "432-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "432-8",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "432-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "432-11",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "432-12",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "432-13",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "432-14",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "432-18",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "433-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "433-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "433-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "433-3-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "433-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "433-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "433-5-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "433-8",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "433-14",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "433-15",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "433-17",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "433-18",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "433-18-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "433-22",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "433-24",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "434-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "434-4-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "434-6",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "434-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-7-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "434-7-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "434-9",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "434-9-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-11",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-13",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-14",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-15-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-16",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-18",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-20",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-23",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-25",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-29",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "434-30",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "434-32",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "434-33",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "434-35",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-35-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-39",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-40",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "434-40-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "434-41",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "434-43",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "434-43-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "434-44",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "434-45",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "434-47",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "434-48",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-6-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-9",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-11-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-13",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-14",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-15",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "435-16",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "436-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "436-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "436-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "436-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "441-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "441-3",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "441-4",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "441-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "441-8",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "441-9",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "441-11",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "441-12",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "442-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "442-2",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "442-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "442-4",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "442-8",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "442-14",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "442-15",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "443-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "443-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "443-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "443-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "443-8",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "444-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "444-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "444-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "444-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "444-9",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "445-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "445-1-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "445-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "445-2-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "445-2-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "445-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "445-4",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "446-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "446-4",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "450-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "450-1-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "450-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "450-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "450-5",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-5",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-7",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-10",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-11",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-12",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-13",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-14",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-15",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-17",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "461-18",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-19",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-20",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-21",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-22",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "461-25",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "461-26",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-28",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-29",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "461-31",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "462-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "462-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "462-3",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "462-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-5-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-8-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-9",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-15",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-16",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-17",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-18",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-18-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-19",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-19-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-19-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-19-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-21",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-22",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-24",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-25",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-25-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "511-28",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "521-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "521-1-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "521-1-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "521-1-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "522-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "611-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "711-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
@@ -3950,8 +1291,7 @@
     {
       "article": "713-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
@@ -3961,698 +1301,203 @@
       ]
     },
     {
-      "article": "713-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "713-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "714-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
       "article": "715-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "715-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "715-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "716-16",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "717-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "717-3",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "722-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "723-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "723-3",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "723-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "723-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "723-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "724-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "725-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "725-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "725-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-8",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-9",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-11",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-12",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-13",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-14",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "726-15",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R131-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R131-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R131-4-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R131-35",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R131-36",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R131-53",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R132-45",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "R226-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R226-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R226-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R226-9",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R226-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R226-11",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R226-12",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R321-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R321-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R321-6",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R321-6-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "R321-9",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R321-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R413-5-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R511-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R610-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R610-4",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R610-5",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R621-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R621-2",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "R622-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R622-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R623-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R623-4",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "R624-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R624-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R624-7",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R625-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "R625-3",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R625-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R625-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R625-6",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R625-8-2",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R625-8-3",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "R625-9",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R625-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R625-11",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R625-12",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R633-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R633-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R633-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R633-5",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "R634-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R635-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R635-2",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R635-4",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R635-5",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R635-7",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R635-8",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R641-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R642-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R642-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R642-4",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R643-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R643-2",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R643-3",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R644-2-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "R645-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R645-8",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R645-8-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R645-9",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "R645-10",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R645-11",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R645-12",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R645-13",
-      "languages": [
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R653-1",
       "languages": [
-        "en",
-        "zh"
+        "en"
       ]
     },
     {
       "article": "R654-1",
       "languages": [
-        "en",
-        "zh"
-      ]
-    },
-    {
-      "article": "R711-1",
-      "languages": [
-        "zh"
-      ]
-    },
-    {
-      "article": "R713-1",
-      "languages": [
-        "zh"
+        "en"
       ]
     }
   ],
-  "corpusSha256": "212fa23cc7c854aa350a7bff4a6efa2893e158b7d7b69cc26293375279c313cf"
+  "corpusSha256": "bfc035261dd09f261b5a7896259fe32481f243ce7403ca37546c468ed1072ba4"
 }
