@@ -20,6 +20,7 @@
       "sourceLanguage": "fr",
       "targetLanguage": "zh-Hans",
       "pivotLanguage": null,
+      "label": "Claude Opus 5.5",
       "translatedArticles": 1301
     },
     "english": {
@@ -53,5 +54,5 @@
       ]
     }
   ],
-  "corpusSha256": "4a6131590e5b2d3ea6b3f107421979650cd51e34c70259203419faa4e11097f7"
+  "corpusSha256": "a6ddb71edb9092504f6fc78876db3b83ac4f5aa140864236010b95382a50cfd3"
 }

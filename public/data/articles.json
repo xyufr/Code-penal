@@ -27,6 +27,7 @@
         "sourceLanguage": "fr",
         "targetLanguage": "zh-Hans",
         "pivotLanguage": null,
+        "label": "Claude Opus 5.5",
         "translatedArticles": 1301
       },
       "english": {
@@ -7985,7 +7986,7 @@
         "zh": [
           "法律规定处以不超过3000欧元罚款的刑事违法行为，构成违警罪。",
           "罚款数额如下：",
-          "1° 对于第一级违警罪（contraventions de la 1re classe），罚款最高为38欧元；",
+          "1° 对于第一级违警罪，罚款最高为38欧元；",
           "2° 对于第二级违警罪，罚款最高为150欧元；",
           "3° 对于第三级违警罪，罚款最高为450欧元；",
           "4° 对于第四级违警罪，罚款最高为750欧元；",
