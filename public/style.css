@@ -23,7 +23,7 @@
 .part-legislative{--part-accent:#b5ccff;--part-fill:#344d70;--part-line:#718cbd}
 .part-regulatory{--part-accent:#a0e3d3;--part-fill:#284f53;--part-line:#5dafa0}
 .part-heading{font-size:calc(16px * var(--text-scale,1));font-weight:650;line-height:1.6;color:var(--part-accent);background:var(--part-fill);border-left:4px solid var(--part-accent);border-radius:0 6px 6px 0;padding:10px 12px;margin:8px 0 14px}
-.book-group+.part-heading{margin-top:30px;border-top:1px solid var(--part-line)}
+.book-group+.part-heading,.part-heading+.part-heading{margin-top:30px;border-top:1px solid var(--part-line)}.part-heading{padding:0}.part-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;text-align:left;font:inherit;color:inherit}.part-toggle>.icon{width:13px;height:13px}
 .book-group{border-left:2px solid var(--part-line);padding-left:4px}
 .book-group .roman{color:var(--part-accent);background:var(--part-fill);min-height:30px;height:auto;padding:3px 2px;line-height:1.35}
 .book-group .book-toggle small{color:var(--part-accent)}
