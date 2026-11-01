@@ -60,7 +60,7 @@ npm run deploy
 
 > 法语：1° 38 euros au plus pour les contraventions de la 1re classe ;
 >
-> 中文：1° 对于第一级违警罪（contraventions de la 1re classe），罚款最高为38欧元；
+> 中文：1° 对于第一级违警罪，罚款最高为38欧元；
 
 流程（Python 3.12+ 标准库，不调用外部 API）：
 
