@@ -39,6 +39,8 @@ npm run deploy
 
 线上地址：[https://law.xyufr.com](https://law.xyufr.com)。已于 2026-10-31 部署至 Worker `code-penal-trilingue`，自定义域名在 `wrangler.jsonc` 的 `routes` 中配置。后续运行 `npm run deploy` 即可更新同一网站。Git 自动构建命令 `npm run build`，部署命令 `npx wrangler deploy`。仅 `dist/` 被公开；原始资料、模型和处理脚本不上传为静态资源。
 
+SEO：`npm run build` 生成 `dist/sitemap.xml`（首页及每条法条各三种语言，共 3,906 个网址，形如 `?lang=zh&article=224-1+A`）；`public/robots.txt` 指向它。`app.js` 的 `seo()` 按当前语言和法条更新 title、description、canonical 与 hreflang；`index.html` 带静态 Open Graph/Twitter 标签、JSON-LD 和分享图 `public/og-image.png`（1200×630）。
+
 ## 数据与校验
 
 - `public/data/articles.json`：唯一运行时语料源，schemaVersion 2。

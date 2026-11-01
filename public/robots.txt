@@ -1,0 +1,5 @@
+# law.xyufr.com
+User-agent: *
+Allow: /
+
+Sitemap: https://law.xyufr.com/sitemap.xml
