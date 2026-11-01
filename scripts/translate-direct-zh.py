@@ -42,7 +42,7 @@ def finalize(c,baseline,objects,lookup,info,label,prefix,target='zh'):
   fr=obj['fr'] if isinstance(obj['fr'],list) else [obj['fr']];out=lookup(fr);obj[target]=out if isinstance(obj['fr'],list) else out[0]
  assert [(o['fr'],o.get(other)) for o in multilingual(c)]==[(o['fr'],o.get(other)) for o in multilingual(baseline)]
  def numbers(text,zh_target=False,comma=False):
-  # French writes article lists as 221-1,221-18; only English uses commas as thousands separators.
+  # French writes article lists as 221-1,221-18; only the translations use commas as thousands separators.
   text=re.sub(r'(?<=\d)[\s\u00a0,.](?=\d{3}(?:\D|$))' if comma else r'(?<=\d)[\s\u00a0.](?=\d{3}(?:\D|$))','',text)
   if zh_target:
    # Section/class ordinals and months are rendered as Chinese numerals (第一节, 第五级, 3月).
@@ -59,7 +59,7 @@ def finalize(c,baseline,objects,lookup,info,label,prefix,target='zh'):
   a['translationStatus']='ai-unreviewed';a['translationProvider']='; '.join(describe(prov,l) for l in ['zh','en'])
   a.pop('translationWarnings',None)
   fr=' '.join(a['text']['fr'])
-  targets=[l for l in ['en','zh'] if numbers(' '.join(a['text'][l]),l=='zh',l=='en')!=numbers(fr,l=='zh')]
+  targets=[l for l in ['en','zh'] if numbers(' '.join(a['text'][l]),l=='zh',True)!=numbers(fr,l=='zh')]
   if targets:a['translationWarnings']=[{'type':'numeric-review','languages':targets}];warnings.append({'article':a['id'],'languages':targets})
  meta=c['metadata'].get('translation',{});prov=c['articles'][0]['translationProvenance'];both=all(l in prov for l in ['zh','en'])
  meta[{'zh':'chinese','en':'english'}[target]]={**info,'label':label,'translatedArticles':len(c['articles'])}

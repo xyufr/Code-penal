@@ -73,7 +73,7 @@ python3 scripts/claude-direct-labels.py zh
 python3 scripts/translate-claude-direct.py --lang zh --import
 ```
 
-英语流程把 `zh` 换成 `en` 即可。译文缓存在 `data/staging/direct-fr-<lang>-claude.sqlite3`。生成的语料和覆盖报告经人工核对后复制到 `public/data/`。数字检查对中文忽略节、目、违警罪等级等改用中文数字的序号；法文条文列表中的逗号（如 221-1,221-18）不视为千位分隔符。当前无中文条文被标记；英语仅 3 条因法文以文字书写违警罪等级（quatrième classe）而被提示。自动检查不能替代法律专业审校。
+英语流程把 `zh` 换成 `en` 即可。译文缓存在 `data/staging/direct-fr-<lang>-claude.sqlite3`。生成的语料和覆盖报告经人工核对后复制到 `public/data/`。数字检查对中文忽略节、目、违警罪等级等改用中文数字的序号；中文欧元金额使用千位分隔符（如 150,000欧元），年份与法条编号不加。法文条文列表中的逗号（如 221-1,221-18）不视为千位分隔符。当前无中文条文被标记；英语仅 3 条因法文以文字书写违警罪等级（quatrième classe）而被提示。自动检查不能替代法律专业审校。
 
 `scripts/translate-direct-zh.py` 保留 GPT-6 Astra 的备选流程（需 `OPENAI_API_KEY`，会产生费用），并提供两条流程共用的 `finalize` 校验。不要用旧的 `finalize-full-corpus.py` 处理新译文，该脚本仅用于历史导入。
 
