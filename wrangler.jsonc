@@ -4,7 +4,9 @@
   "account_id": "d0749bca93d9081eb504534883029c6c",
   "routes": [{ "pattern": "law.xyufr.com", "custom_domain": true }],
   "compatibility_date": "2026-10-31",
-  "assets": { "directory": "./dist" },
+  // The Worker builds per-article HTML for "/" (any query string); all other paths are served straight from dist/.
+  "main": "src/worker.js",
+  "assets": { "directory": "./dist", "binding": "ASSETS", "run_worker_first": ["/", "/index.html"] },
   "observability": {
     "enabled": true,
     "traces": { "enabled": true }
