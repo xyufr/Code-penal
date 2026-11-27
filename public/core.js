@@ -9,10 +9,12 @@ export function searchArticles(articles,query,group='all',saved=null) {
  if(!index){index=articles.map((a,order)=>({a,order,id:articleNumber(a.id),title:normalize(Object.values(a.title).join(' ')),body:normalize(Object.values(a.text).flat().join(' '))}));indexes.set(articles,index);}
  const q=normalize(query).replace(/^(?:article|art\.?)\s+(?=[rdl\d])/,'').replace(/^第\s*(.+?)\s*条$/,'$1');
  const number=articleNumber(q),tokens=q.split(' ').filter(Boolean),savedSet=saved?new Set(saved):null;
- return index.filter(x=>(group==='all'||x.a.group===group)&&(!savedSet||savedSet.has(x.a.id)))
+ const hits=index.filter(x=>(group==='all'||x.a.group===group)&&(!savedSet||savedSet.has(x.a.id)))
  .map(x=>{const exact=number===x.id,prefix=number&&x.id.startsWith(number),haystack=`${normalize(x.a.id)} ${x.id} ${x.title} ${x.body}`;
  return {...x,score:!q?0:exact?1000:prefix?500:x.title.includes(q)?100:1,match:exact||prefix||tokens.every(token=>haystack.includes(token))};})
- .filter(x=>x.match).sort((a,b)=>b.score-a.score||a.order-b.order).map(x=>x.a);
+ .filter(x=>x.match).sort((a,b)=>b.score-a.score||a.order-b.order);
+ // A query that names an article exactly shows that article alone, not the articles that cite it.
+ return (hits[0]?.score===1000?hits.filter(x=>x.score===1000):hits).map(x=>x.a);
 }
 export function paginateArticles(articles,page=0,pageSize=30){const pages=Math.max(1,Math.ceil(articles.length/pageSize));const current=Math.max(0,Math.min(pages-1,Math.floor(page)||0));return {items:articles.slice(current*pageSize,(current+1)*pageSize),page:current,pages};}
 export function validateCorpus(data) {

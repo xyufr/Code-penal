@@ -7,6 +7,7 @@ import corpus from '../scripts/seed.mjs';
 const published=JSON.parse(await readFile(new URL('../public/data/articles.json',import.meta.url),'utf8'));
 test('published corpus contains complete, aligned translations and valid references',()=>{assert.ok(validateCorpus(published).articles.length>0);});
 test('article lookup ranks exact numbers over text references and accepts French or Chinese notation',()=>{for(const q of ['121-7','Article 121-7','第121-7条','121–7'])assert.equal(searchArticles(corpus.articles,q)[0].id,'121-7');});
+test('an exact article number shows only that article, not the ones citing it',()=>{for(const q of ['121-7','Article 121-7','第121-7条'])assert.deepEqual(searchArticles(corpus.articles,q).map(a=>a.id),['121-7']);});
 test('cross-language search supports French accents, Chinese and English',()=>{for(const q of ['legitime defense','正当防卫','self-defence'])assert.ok(searchArticles(corpus.articles,q).some(a=>a.id==='122-5'));});
 test('search combines collection, bookmarks and text filters',()=>{assert.deepEqual(searchArticles(corpus.articles,'盗窃','theft',['311-1']).map(a=>a.id),['311-1']);assert.equal(searchArticles(corpus.articles,'盗窃','principles').length,0);assert.equal(searchArticles(corpus.articles,'','all',[]).length,0);});
 test('unmatched queries and HTML-like input do not return articles',()=>{assert.equal(searchArticles(corpus.articles,'not-a-real-query').length,0);assert.equal(searchArticles(corpus.articles,'<script>').length,0);});

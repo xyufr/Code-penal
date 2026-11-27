@@ -7,7 +7,7 @@ try {
 } catch {}
 let drag = null;
 const maximum = () => Math.max(220, Math.min(480, innerWidth - 550));
-const defaultWidth = () => innerWidth <= 1000 ? 220 : innerWidth <= 1180 ? 224 : 280;
+const defaultWidth = () => innerWidth <= 1000 ? 220 : innerWidth <= 1180 ? 260 : innerWidth <= 1440 ? 320 : 360;
 const clamp = value => Math.round(Math.max(220, Math.min(maximum(), value)));
 const currentWidth = () => clamp(preferred ?? defaultWidth());
 function save() {
